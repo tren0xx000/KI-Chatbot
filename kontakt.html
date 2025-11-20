@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Kontakt – KI Chatbots</title>
+<style>
+    body {
+        background: #05050A;
+        color: white;
+        font-family: Arial;
+        padding: 60px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        background: rgba(255,255,255,0.05);
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        background: #0f0f18;
+        color: white;
+        border: 1px solid #333;
+        border-radius: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(90deg, #ff00c8, #00c8ff);
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        box-shadow: 0 0 25px #00c8ff;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Kontakt aufnehmen</h1>
+
+<form action="send.php" method="POST">
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+    <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+    <button type="submit">Absenden</button>
+</form>
+
+</body>
+</html>
